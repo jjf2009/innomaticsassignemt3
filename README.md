@@ -31,6 +31,3 @@ To get a local copy of the project up and running, follow these steps:
 ## Live Demo
 
 [Link](https://innomaticsassignemt3.vercel.app/)
-
-[Link]()
-
