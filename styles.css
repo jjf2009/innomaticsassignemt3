@@ -1,0 +1,117 @@
+/*Base styles*/
+
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:2rem;
+    margin:0;
+    padding:0;
+    text-align: center;
+}
+.container{
+    display: grid;
+    width: 100vw;
+}
+
+/* Mobile First Layout */
+.container{
+    grid-template-columns: 1fr;
+}
+.header{
+    background-color: #6ba8ff;
+    padding: 20px;
+    height:3em;
+}
+.content-min {
+    background-color: #d4d4d6;
+    padding: 20px;
+    height:5em;
+}
+.content-max{
+    display: none;
+}
+.top{
+    background-color: #0752bb;
+    height:40px;
+}
+.signup {
+    background-color: #b8d4ff;
+    padding: 20px;
+    height: 4em;
+}
+
+.feature {
+    padding: 20px;
+}
+
+.feature-1 {
+    background-color: #ffc78a;
+    height: 4em;
+}
+
+.feature-2 {
+    background-color: #d3afff;
+    height: 4em;
+}
+
+.feature-3 {
+    background-color: #ff9e9e;
+    height: 4em;
+}
+/*Tabel Layout*/
+@media (min-width:768px){
+    .container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .top{
+        grid-column: span 2;
+    }
+    .header{
+        grid-column: span 2;
+        height:5em;
+    }
+    .content-min{
+        grid-column: span 2;
+        height:8em;
+    }
+    .signup {
+        grid-column: 1 / 2;
+        height:5em;
+}
+.feature-1, .feature-2, .feature-3 {
+    grid-column: span 1;
+    height: 5em;
+}
+}
+
+/* Desktop Layout */
+@media (min-width: 1024px) {
+    .container {
+grid-template-columns: 1fr 1fr 1fr;
+    }
+.top{
+    grid-column: span 3;  
+}
+    .header {
+grid-column: span 3;
+height:10rem;
+    }
+.content-min{
+    display: none;
+}
+    .content-max {
+        display: block;
+background-color: #d4d4d6;
+padding: 20px;
+grid-column: span 3;
+height:8em;
+}
+    .signup {
+grid-column: span 3;
+height:2em;
+    }
+
+    .feature-1, .feature-2, .feature-3 {
+grid-column: span 1;
+height:6em;
+    }
+}
